@@ -94,6 +94,9 @@ target/
 # exclude compiled binaries
 bin/
 
+# excluda results from source control
+results/
+
 # exclude data from source control by default
 /data/external
 /data/interim

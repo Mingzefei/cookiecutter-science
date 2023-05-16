@@ -8,22 +8,27 @@ Project Organization
 
     .
     ├── AUTHORS.md
-    ├── LICENSE
-    ├── README.md
-    ├── bin
+    ├── backup
+    ├── bin (gitignore)
     ├── config
-    ├── data
+    ├── data (gitignore)
     │   ├── external
     │   ├── interim
     │   ├── processed
     │   └── raw
     ├── docs
+    ├── LICENSE
+    ├── Makefile
     ├── notebooks
+    ├── README.md
     ├── reports
-    │   └── figures
+    │   ├── figures
+    │   └── Makefile (for LaTeX)
+    ├── results (gitignore)
     └── src
         ├── data
-        ├── external
+        ├── external (gitignore)
         ├── models
         ├── tools
         └── visualization
+

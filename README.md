@@ -21,6 +21,8 @@ Project Structure
 ├── AUTHORS.md
 ├── LICENSE
 ├── README.md
+├── Makefile           <- Makefile for this programs, e.g., get_data, clean, etc., or any commands
+├── backup             <- Data and results can be backuped here (tracked by git)
 ├── bin                <- Your compiled model code can be stored here (not tracked by git)
 ├── config             <- Configuration files, e.g., for doxygen or for your model if needed
 ├── data
@@ -31,6 +33,7 @@ Project Structure
 ├── docs               <- Documentation, e.g., doxygen or scientific papers (not tracked by git)
 ├── notebooks          <- Ipython or R notebooks
 ├── reports            <- For a manuscript source, e.g., LaTeX, Markdown, etc., or any project reports
+│   ├── Makefile       <- Makefile for build LaTeX
 │   └── figures        <- Figures for the manuscript or reports
 └── src                <- Source code for this project
     ├── data           <- scripts and programs to process data

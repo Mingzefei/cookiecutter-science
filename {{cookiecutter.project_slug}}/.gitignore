@@ -98,10 +98,13 @@ bin/
 results/
 
 # exclude data from source control by default
-/data/external
-/data/interim
-/data/processed
-/data/raw
+data/external
+data/interim
+data/processed
+data/raw
 
 # exclude external models from source control
-/src/external/
+src/external/
+
+# exclude backup files
+backup/

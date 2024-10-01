@@ -1,0 +1,8 @@
+# TeX/LaTeX
+*.aux
+*.bbl
+*.blg
+*.synctex.gz
+*.xwm
+*.toc
+*.pdf

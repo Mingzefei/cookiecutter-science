@@ -1,0 +1,17 @@
+
+train:
+  optimizer: "adam"
+  learning_rate: 0.001
+  epochs: 50
+  batch_size: 32
+  loss_function: "binary_crossentropy"
+
+data:
+  raw:
+    - url: "https://raw.githubusercontent.com/jbrownlee/Datasets/master/pima-indians-diabetes.data.csv"
+      name: "example_raw_data.csv"
+  external:
+    - url: "https://raw.githubusercontent.com/jbrownlee/Datasets/master/pima-indians-diabetes.data.csv"
+      name: "example_external_data1.csv"
+    - url: "https://raw.githubusercontent.com/jbrownlee/Datasets/master/pima-indians-diabetes.data.csv"
+      name: "example_external_data2.csv"

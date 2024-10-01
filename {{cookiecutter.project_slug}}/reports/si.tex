@@ -1,0 +1,86 @@
+\documentclass[a4paper]{article}
+\usepackage[utf8]{inputenc}
+
+% Author Affiliation
+\usepackage{authblk}
+
+% Layout and Formatting for better readability
+\usepackage[margin=1.25in]{geometry} % Page margins
+\usepackage{setspace} % Line spacing
+\renewcommand{\baselinestretch}{1.5}
+\usepackage{lineno} % Line numbering
+\linenumbers
+
+% Referencing and Hyperlinks
+\usepackage[backref]{hyperref}
+\hypersetup{hidelinks}
+\usepackage{xr} % External documents referencing
+\externaldocument[main-]{main}
+
+% Scientific Writing
+\usepackage{amsmath}
+\usepackage{mathtools}
+\usepackage{siunitx} % SI units
+\DeclareSIUnit\angstrom{\text {Å}} % Custom unit
+
+% Tables and Figures
+\usepackage{tabularx}
+\usepackage{booktabs}
+\usepackage{graphicx}
+\usepackage{subfig}
+\graphicspath{{./figures}} % Path for figures
+\let\oldincludegraphics\includegraphics
+\renewcommand{\includegraphics}[2][]{
+    \oldincludegraphics[scale=1, #1]{#2}
+} % Default figure scaling
+\usepackage{caption}
+\captionsetup[subfigure]{labelformat=simple} % Subfigure caption format
+\renewcommand\thesubfigure{(\alph{subfigure})} % Subfigure label format
+
+\renewcommand{\thefigure}{S\arabic{figure}}
+\renewcommand{\thetable}{S\arabic{table}}
+% \renewcommand{\thealgorithm}{S\arabic{algorithm}}
+\renewcommand{\theequation}{S\arabic{equation}}
+\renewcommand{\thesection}{S\arabic{section}}
+
+% Custom Commands
+% Example: 
+% \newcommand{\miepstotal}{\boldsymbol{\varepsilon}^{\text{total}}}
+
+\begin{document}
+
+\title{Supporting Information for: \\ This is a title}
+
+\author[1]{H}
+\author[2]{G}
+
+\affil[1]{School of R, B University, Beijing, China}
+\affil[2]{School of E, T University, Beijing, China}
+
+\maketitle
+\tableofcontents
+
+\section{Proof of Theorem 1}
+
+% Fig Example: 
+% \begin{figure}[htbp]
+%     \centering
+%     \subfloat[]{
+%         \includegraphics{fig1a.pdf}
+%         \label{fig:1a}
+%     }
+%     \\
+%     \subfloat[]{
+%         \includegraphics[width=0.45\linewidth]{fig1b.pdf}
+%         \label{fig:1b}
+%     }
+%     \caption{
+%         This is a figure.
+%     }
+%     \label{fig:1}
+% \end{figure}
+
+% \bibliographystyle{ieeetr}
+% \bibliography{ref}
+
+\end{document}

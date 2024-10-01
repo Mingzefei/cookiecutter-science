@@ -1,0 +1,41 @@
+# 构建系统相关配置
+[build-system]
+requires = [
+    "setuptools", 
+    "setuptools_scm[toml]",
+    "wheel"]
+build-backend = "setuptools.build_meta"
+
+# 项目元数据
+[project]
+name = "my_project"  # 项目名称
+description = "project description"  # 项目描述
+authors = [
+    {name = "Your Name", email = "your.email@example.com"}
+]
+dynamic = ["version"]
+requires-python = ">=3.10"  # 最低Python版本
+dependencies = [
+    "numpy",  # 项目基础依赖，非全部
+    "pandas",
+    "jupyterlab",
+    "matplotlib",
+    "uv",
+    "typer",
+    "SciencePlots"
+]
+classifiers = ["Private :: Do Not Upload"] # 如果为私有项目，不希望发布到PYPI
+
+# 可选开发工具配置
+[project.optional-dependencies]
+dev = [
+    "ruff",   # 代码规范工具
+    "pytest"  # 单元测试工具
+]
+
+[tool.setuptools]
+packages = ["src"] # 项目代码所在路径 src
+
+[tool.setuptools_scm] # 使用 github tag 作为版本号
+version_scheme = "post-release"
+local_scheme = "no-local-version"

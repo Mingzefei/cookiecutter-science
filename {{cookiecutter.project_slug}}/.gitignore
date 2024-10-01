@@ -104,7 +104,7 @@ data/processed
 data/raw
 
 # exclude external models from source control
-src/external/
+{{cookiecutter.project_slug}}/external/
 
 # exclude backup files
 backup/

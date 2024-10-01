@@ -1,3 +1,4 @@
+{% raw %}
 \documentclass[a4paper]{article}
 \usepackage[utf8]{inputenc}
 
@@ -28,9 +29,7 @@
 \usepackage{booktabs}
 \usepackage{graphicx}
 \usepackage{subfig}
-{% raw %}
 \graphicspath{{./figures}} % Path for figures
-{% endraw %}
 \let\oldincludegraphics\includegraphics
 \renewcommand{\includegraphics}[2][]{
     \oldincludegraphics[scale=1, #1]{#2}
@@ -89,3 +88,4 @@ This is an introduction.
 % \bibliography{ref}
 
 \end{document}
+{% endraw %}

@@ -28,7 +28,9 @@
 \usepackage{booktabs}
 \usepackage{graphicx}
 \usepackage{subfig}
+{% raw %}
 \graphicspath{{./figures}} % Path for figures
+{% endraw %}
 \let\oldincludegraphics\includegraphics
 \renewcommand{\includegraphics}[2][]{
     \oldincludegraphics[scale=1, #1]{#2}

@@ -1,9 +1,9 @@
 {
-    "full_name": "Mario Krapp",
-    "email": "mariokrapp@gmail.com",
-    "github_username": "mkrapp",
+    "full_name": "Hua Guangbin",
+    "email": "huagb@gmail.com",
+    "github_username": "Mingzefei",
     "project_name": "Name of your science project",
-    "project_slug": "{{ cookiecutter.project_name.lower().replace(' ', '-') }}",
+    "project_slug": "{{ cookiecutter.project_name.lower().replace(' ', '_') }}",
     "project_short_description": "A short description of your project",
     "release_date": "{% now 'local' %}",
     "version": "0.1.0",

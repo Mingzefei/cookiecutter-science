@@ -108,3 +108,6 @@ src/external/
 
 # exclude backup files
 backup/
+
+# exclude virtual environment
+.venv

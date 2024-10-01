@@ -38,4 +38,4 @@ results_dir = root_dir / "results"
 
 scripts_dir = root_dir / "scripts"
 
-src_dir = root_dir / "src"
+src_dir = root_dir / "{{cookiecutter.project_slug}}"

@@ -2,7 +2,7 @@
 
 import requests
 from scripts.config_loader import load_config
-import paths
+from . import paths
 
 def download_raw_data(url: str, filename: str, save_location: str):
     """

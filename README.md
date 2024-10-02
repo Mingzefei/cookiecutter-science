@@ -1,5 +1,7 @@
 # Scientific Project Organization Framework
 
+[简体中文](README_CN.md)
+
 A complete scientific project involves multiple aspects such as data, code, and reports. Properly organizing these components facilitates project management, reproducibility, backup, and traceability.  
 Based on practical experience, this document presents a project organization framework inspired by [Mario Krapp/semic-project](https://gitlab.pik-potsdam.de/krapp/semic-project) and [Joshua Cook](https://joshuacook.netlify.app/posts/2024-07-27_python-data-analysis-org/).  
 Using the `cookiecutter` tool, you can quickly generate [the framework structure as shown below](#project-structure) and easily start a new scientific project.
@@ -89,6 +91,8 @@ cookiecutter https://github.com/Mingzefei/cookiecutter-science.git
     - `data/interim`: Intermediate data, pre-processed for further steps.
     - `data/processed`: Final processed data for modeling and analysis.
     - `data/external`: External datasets from other research teams for validation and comparison.
+
+By default, the project does not track folders ending with `-private` and their contents, which can be used to store private files.
 
 ## Future Features
 

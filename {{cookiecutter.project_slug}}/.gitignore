@@ -111,3 +111,6 @@ backup/
 
 # exclude virtual environment
 .venv
+
+# exclude private files
+**-private

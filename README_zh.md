@@ -92,6 +92,8 @@ cookiecutter https://github.com/Mingzefei/cookiecutter-science.git
     - `data/processed`：最终处理后数据，用于建模和分析。
     - `data/external`：外部研究团队的数据集，用于验证和比较。
 
+此外，项目默认不会追踪以 `-private` 结尾的文件夹及其下内容，可用于存放私人文件。
+
 ## 未来可能会添加的特性
 
 - code tests
